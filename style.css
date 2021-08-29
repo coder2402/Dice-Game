@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rampart One', cursive;
+    color: white;
+}
+
+body{
+    overflow: hidden;
+    background-color: black;
+}
+video{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+#header h2{
+    color: black;
+    background-color: bisque;
+}
+
+.change{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.instructions{
+    position: absolute;
+    top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 500px;
+}
+
+.button{
+    position: absolute;
+    top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+}
+
+button{
+    width: 100px;
+    height: 30px;
+}
+button b{
+    color: black;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    top: 470px;
+}
+
+
+
+
+
+

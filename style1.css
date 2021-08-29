@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Shadows Into Light', cursive;
+    box-sizing: border-box;
+}
+
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+video{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+body{
+    /* background-image: url(photos/back.jpg);
+    background-size: cover; */
+    overflow: hidden;
+    background-position: center;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+.header h2{
+    color: black;
+    background-color: bisque;
+    text-align: center;
+}
+
+.container{
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 10;
+}
+
+.player-0, .player-1{
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}
+
+.name{
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.score{
+    text-align: center;
+    font-size: 80px;
+    color: red;
+    margin-bottom: 80px;
+}
+.player-0{
+    background-color: #f7f7f7;
+}
+
+.active { background-color: #f7f7f7; }
+.active .name { font-weight: 300; }
+.active .name::after{
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+}
+
+.playercurrentbox{
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 8px;
+    text-align: center;
+}
+
+.currentlabel{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: black;
+}
+
+.currentscore{
+    font-size: 25px;
+}
+
+.btnnew { top: 45px;}
+.btnroll { top: 330px;}
+.btnhold { top: 360px;}
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 300px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s color 0.3s;
+}
+button:hover { font-weight: 600; }
+
+.winner {background-color: #f7f7f7;}
+.winner .name { font-weight: 300; color: #EB4D4D; }
+
+.dice{
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+#dice1 { top: 100px; }
+#dice2 { top: 210px; }
+
+#winningscore {
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    color: #555;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    transform: translateX(-50%);
+}
+
+#winningScore:focus { outline: none; }
+
+@media (min-width: 400px) and (max-width: 950px){
+    .container{
+        width: 80%;
+    }
+    .name{
+        font-size: 25px;
+    }
+}
+
+
+
