@@ -251,11 +251,11 @@ button:hover { font-weight: 600; }
         position: absolute;
     }
     #dice1{
-        top: 260px;
+        top: 280px;
         left: 80px;
     }
     #dice2{
-        top: 260px;
+        top: 280px;
         left: 220px;
     }
 }
